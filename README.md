@@ -8,6 +8,12 @@ pdflatex main.tex
 pdflatex main.tex
 ```
 
+Na linuxovém počítači lze tyto čtyři příkazy spustit naráz, a to spuštěním skriptu `compile.sh`:
+
+```bash
+source compile.sh
+```
+
 Jak vidno, hlavním souborem je `main.tex`.
 V něm se do dokumentu vkládají následující části:
   - Titulní stránka. Pokud si ji student potřebuje upravit, tak musí editovat soubor `title_page.tex`. Pravděpodobně bude potřeba upravit tabulku s bodováním tak, aby odpovídala pravidlům nastaveným v daném semestru Fyzikálního praktika.
