@@ -1,0 +1,70 @@
+Ukázky, jak se co dělá.
+Literatura se cituje takto~\cite{broz}.
+Kód \texttt{broz} pochází ze souboru Praktika.bib, ve kterém jsou bibtex údaje o mnoha zdrojích, které by se Vám mohly hodit.
+Soubor si prohlédněte, vyberte si své zdroje a pak už jen citujte.
+Soubor také můžete doplnit o další položky!
+
+Matematické rovnice lze psát více způsoby.
+Přímo v textu se píší takto: $f(x) = ax + b$.
+Rovnice, které chcete patřičně zdůraznit (to bude nejspíše většina), můžete psát např. takto:
+\begin{equation}
+  \label{eq:lin_func}
+  f(x) = ax + b
+\end{equation}
+Na rovnici se pak odkazujete takto: rovnice~\eqref{eq:lin_func}.
+
+Obrázky vložíte takto.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/example_figure.pdf}
+  \caption{Příklad změřené závislosti proudu na napětí nafitované lineární funkcí.
+    Černé čtverečky zobrazují výsledky měření.
+    Červená čára ukazuje nafitovanou lineární závislost.
+  }
+  \label{fig:i_vs_u}
+\end{figure}
+Na obrázek se pak odkážete takto: obr.~\ref{fig:i_vs_u}.
+
+Tabulka se vloží takto.
+\input{tables/example_table.tex}
+Na tabulku se odkazuje stejným způsobem jako na obrázek, tj. tab.~\ref{tab:ohm}.
+\input{tables/example_table_2.tex}
+Tab.~\ref{tab:ohm2} je příklad tabulky se sloučenými sloupci a řádky pomocí příkazu \texttt{multicolumn} a \texttt{multirow}.
+
+\subsection{Matematické vzorce podrobněji}
+\label{sec:mvp}
+
+Používají se prostředí \texttt{equation} pro jednořádkové rovnice a \texttt{align} pro víceřádkové rovnice.
+Případně můžete použít i \texttt{equation*} a \texttt{align*}, pokud nechcete, aby byly rovnice číslovány.
+Matematické vzorce se dají psát i víceřádkově.
+\begin{align}
+  f(x) &= ax + b \\
+  g(x, y) &= ax + by^{2} + \sqrt{xy} \\
+  h(x) &= \left(\frac{x}{1 + x^2}\right)^3 \\
+  N(x; \mu, \sigma) &= \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}} \\
+  \frac{\partial f}{\partial x} &= a \\
+\end{align}
+Řecká písmena se píší takto:
+\begin{equation*}
+  \alpha \beta \gamma \delta \epsilon \zeta \eta \theta \iota \kappa \lambda \mu \nu \xi \pi \rho \sigma \tau \upsilon \phi \chi \psi \omega
+\end{equation*}
+a velká řecká písmena takto (všimněte si, že některá se píší stejně jako latinská):
+\begin{equation}
+  A B \Gamma \Delta E Z H \Theta I K \Lambda M N \Xi \Pi P \Sigma T \Upsilon \Phi X \Psi \Omega
+\end{equation}
+Horní a dolní indexy se píší následovně:
+\begin{equation}
+  x^2 \quad x_2 \quad x^{2+3} \quad x_{2+3} \quad x^{2+3}_{2+3}
+\end{equation}
+Vektorové operace se píší takto:
+\begin{equation}
+  \nabla \cdot \vec{E} \quad \nabla \times \vec{B} \quad \nabla \cdot \nabla \times \vec{A} \quad \nabla \times \nabla \cdot \vec{A}
+\end{equation}
+Integrály se píší takto:
+\begin{equation}
+  \int f(x) \, \mathrm{d}x \quad \int_a^b f(x) \, \mathrm{d}x \quad \iint f(x, y) \, \mathrm{d}x \, \mathrm{d}y \quad \iiint f(x, y, z) \, \mathrm{d}x \, \mathrm{d}y \, \mathrm{d}z
+\end{equation}
+Sumy se píší takto:
+\begin{equation}
+  e^{x} = \sum_{n=0}^{\infty} \frac{x^n}{n!}
+\end{equation}

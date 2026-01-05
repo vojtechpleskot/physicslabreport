@@ -1,0 +1,102 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[czech]{babel} % použijte "slovak" namísto "czech", pokud píšete slovensky
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage[top = 2cm, bottom = 2cm, left = 2cm, right = 2cm]{geometry}
+
+    
+%For title page
+\usepackage{titlesec}
+\usepackage{setspace} %Rámeček nahoře
+\usepackage{framed} %Rámeček nahoře
+\usepackage{array} %Tabulka dole
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{newfloat}
+\usepackage{multirow}
+\usepackage{dirtytalk}
+\usepackage{xspace}
+\usepackage{upgreek}
+\usepackage{placeins}
+\usepackage{indentfirst}
+\usepackage{longtable}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{multirow}
+
+\DeclareFloatingEnvironment{graph}
+\addto\captionsczech{%
+  \renewcommand{\graphname}{Graf}%
+  \renewcommand{\figurename}{Obr.}%
+}
+\addto\captionsslovak{%
+  \renewcommand{\graphname}{Graf}%
+  \renewcommand{\figurename}{Obr.}%
+}
+
+\bibliographystyle{ieeetr}
+
+
+%-------------------- INFORMACE NA PREDNI STRANE PROTOKOLU ------------------------
+%CISLO PRAKTIKA
+\newcommand\cisloPraktika{x} % I, II, III, nebo IV
+%JMENO
+\newcommand\jmeno{xxx xxx}
+%MAIL
+\newcommand\mail{xxx@xxx.xxx}
+
+%NÁZEV ÚLOHY
+\newcommand\nazevUlohy{xxx}
+%ČÍSLO ÚLOHY
+\newcommand\cisloUlohy{xxx}
+%DATUM MERENI
+\newcommand\datumMereni{dd.\,m.\,yyyy} %format: 30.\,9.\,2021 
+%----------------------------------------------------------------------------------
+ 
+
+\begin{document}
+\input{title_page.tex}
+
+% Následující dva řádky před přípravou protokolu zakomentujte, nebo vymažte!!!
+\section{Ukázky}
+\input{sections/ukazky.tex}
+
+\section{Pracovní úloha}
+\label{section:uloha}
+\input{sections/pracovni_uloha.tex}
+
+\section{Teorie}
+\label{section:teorie}
+\input{sections/teorie.tex}
+\FloatBarrier
+
+\section{Výsledky a zpracování měření}
+\label{section:zpracovani}
+\input{sections/vysledky_a_zpracovani_mereni.tex}
+\FloatBarrier
+
+
+\section{Diskuze}
+\label{section:diskuze}
+\input{sections/diskuze.tex}
+\FloatBarrier
+
+\section{Závěr}
+\label{section:zaver}
+\input{sections/zaver.tex}
+\FloatBarrier
+\bibliography{Praktika.bib}
+
+\newpage
+\section{Přílohy}
+% Napr. tabulky:
+%\input{tables/tabulka_do_prilohy.tex}
+
+\end{document}
+
