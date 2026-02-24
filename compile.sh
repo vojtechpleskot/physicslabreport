@@ -1,4 +1,4 @@
-pdflatex main.tex
-bibtex main.aux
-pdflatex main.tex
-pdflatex main.tex
+pdflatex main
+biber main
+pdflatex main
+pdflatex main

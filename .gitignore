@@ -4,3 +4,5 @@ main.aux
 main.out
 main.pdf
 main.log
+main.bcf
+main.run.xml
