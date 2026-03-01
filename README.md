@@ -16,7 +16,7 @@ source compile.sh
 
 Jak vidno, hlavním souborem je `main.tex`.
 V něm se do dokumentu vkládají následující části:
-  - Titulní stránka. Pokud si ji student potřebuje upravit, tak musí editovat soubor `prepareprotokol.cls`. Mo6n8 bude potřeba upravit tabulku s bodováním tak, aby odpovídala pravidlům nastaveným v daném semestru Fyzikálního praktika.
+  - Titulní stránka. Pokud si ji student potřebuje upravit, tak musí editovat soubor `prepareprotokol.cls`. Možná bude potřeba upravit tabulku s bodováním tak, aby odpovídala pravidlům nastaveným v daném semestru Fyzikálního praktika.
   - Jednotlivé sekce protokolu. Student pak při psaní protokolu vyplní soubory ze složky `sections/`. Např. teoretický úvod napíše do souboru `sections/teorie.tex`. Student si samozřejmě může libovolně přidávat další soubory, nebo ubírat podle potřeby.
   - Sekce Ukázky, ve které jsou shrnuty základní příkazy potřebné při psaní textu, vkládání obrázků, tabulek apod. Tato sekce je pouze ilustrativní a nesmí být vložena do výsledného odevzdávaného protokolu. Student tedy před kompilací finálního dokumentu musí zakomentovat tyto dva řádky v souboru `main.tex`:
   
