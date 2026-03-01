@@ -1,4 +1,17 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass{prepareprotokol}
+
+
+%-------------------- INFORMACE NA PREDNI STRANE PROTOKOLU ------------------------
+
+\praktikum{I} %číslo praktika (I, II, III, nebo IV)
+\autor{Jméno Autora} %jméno autora
+\datum{1.\,1.\,2021} %datum měření
+\cislo{1} %číslo úlohy
+\nazev{Název} %název úlohy
+
+%----------------------------------------------------------------------------------
+ 
+
 \usepackage[utf8]{inputenc}
 \usepackage[czech]{babel} % použijte "slovak" namísto "czech", pokud píšete slovensky
 \usepackage[T1]{fontenc}
@@ -6,12 +19,6 @@
 \usepackage{lmodern}
 \usepackage[top = 2cm, bottom = 2cm, left = 2cm, right = 2cm]{geometry}
 
-    
-%For title page
-\usepackage{titlesec}
-\usepackage{setspace} %Rámeček nahoře
-\usepackage{framed} %Rámeček nahoře
-\usepackage{array} %Tabulka dole
 
 \usepackage{caption}
 \usepackage{subcaption}
@@ -34,44 +41,26 @@
 \addto\captionsczech{%
   \renewcommand{\graphname}{Graf}%
   \renewcommand{\figurename}{Obr.}%
-}
+}  
 \addto\captionsslovak{%
   \renewcommand{\graphname}{Graf}%
   \renewcommand{\figurename}{Obr.}%
-}
+}  
 
 \usepackage[
   backend=biber,
   style=numeric,
   sorting=nyt,
   giveninits=true
-]{biblatex}
+]{biblatex}  
 \renewbibmacro{in:}{}
 
 \addbibresource{Praktika.bib}
 
 
 
-%-------------------- INFORMACE NA PREDNI STRANE PROTOKOLU ------------------------
-%CISLO PRAKTIKA
-\newcommand\cisloPraktika{x} % I, II, III, nebo IV
-%JMENO
-\newcommand\jmeno{xxx xxx}
-%MAIL
-\newcommand\mail{xxx@xxx.xxx}
-
-%NÁZEV ÚLOHY
-\newcommand\nazevUlohy{xxx}
-%ČÍSLO ÚLOHY
-\newcommand\cisloUlohy{xxx}
-%DATUM MERENI
-\newcommand\datumMereni{dd.\,m.\,yyyy} %format: 30.\,9.\,2021 
-%----------------------------------------------------------------------------------
- 
-
 \begin{document}
-\input{title_page.tex}
-
+\maketitle
 % Následující dva řádky před přípravou protokolu zakomentujte, nebo vymažte!!!
 \section{Ukázky}
 \input{sections/ukazky.tex}
