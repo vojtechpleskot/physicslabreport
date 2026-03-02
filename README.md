@@ -8,7 +8,13 @@ pdflatex main
 pdflatex main
 ```
 
-Na linuxovém počítači lze tyto čtyři příkazy spustit naráz, a to spuštěním skriptu `compile.sh`:
+- Ve Windows PowerShell lze tyto čtyři příkazy spustit naráz, a to spuštěním skriptu `compile.ps1`:
+
+```bash
+.\compile.ps1
+```
+
+- Na linuxovém počítači je lze spustit skriptem `compile.sh`:
 
 ```bash
 source compile.sh
